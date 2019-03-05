@@ -7,16 +7,16 @@ import Trigger from "./Trigger";
 class Page extends Component {
   state = {
     default: {
-      pageNumber: 1,
-      script: "GSManager",
+      pageNumber: "",
+      script: "",
       audio: {
-        audioName: "audio-name",
-        isAnim: true,
-        objectId: 1
+        audioName: "",
+        isAnim: "",
+        objectId: ""
       },
       gameObjects: [],
       texts: [],
-      audioFile: "The happy cat wags.mp3",
+      audioFile: "",
       timestamps: [],
       triggers: []
     }

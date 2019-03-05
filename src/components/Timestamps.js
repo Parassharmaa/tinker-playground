@@ -3,11 +3,11 @@ import React, { Component } from "react";
 class Timestamps extends Component {
   state = {
     default: {
-      start: 149,
-      wordIdx: 0,
-      audio: "thuh.mp3",
-      end: 286,
-      starWord: "No"
+      start: "",
+      wordIdx: "",
+      audio: "",
+      end: "",
+      starWord: ""
     }
   };
   render() {

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Text extends Component {
   state = {
     default: {
-      id: 0,
+      id: "",
       text: ""
     }
   };

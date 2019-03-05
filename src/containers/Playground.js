@@ -1,24 +1,38 @@
 import React, { Component } from "react";
 import { Format } from "../components/";
-import Download from 'downloadjs';
+import Download from "downloadjs";
+import _ from "lodash";
 
 class Playground extends Component {
   state = {
     mainData: {
-      id: 6,
-
-      fontColor: "black",
-      textStartPositionX: -420.0,
-      textStartPositionY: 132.0,
-      textFontSize: 35,
+      id: "",
+      fontColor: "",
+      textStartPositionX: "",
+      textStartPositionY: "",
+      textFontSize: "",
       storyImageFile: "",
-      backgroundColor: "blue",
-      arrowColor: "red",
-      fontFamily: "helvetica",
-      language: "english",
+      backgroundColor: "",
+      arrowColor: "",
+      fontFamily: "",
+      language: "",
       pages: []
-    },
+    }
   };
+
+  replacePropertyValue(object) {
+    const newObject = _.clone(object);
+
+    _.each(object, (val, key) => {
+      if (Array.isArray(val) && val.length == 0) {
+        newObject[key] = null;
+      } else if (typeof val === "object" || Array.isArray(val)) {
+        newObject[key] = this.replacePropertyValue(val);
+      }
+    });
+
+    return newObject;
+  }
 
   render() {
     return (
@@ -51,7 +65,10 @@ class Playground extends Component {
 
         <button
           onClick={e => {
-            let d = JSON.stringify(this.state.mainData);
+            let d = JSON.stringify(
+              this.replacePropertyValue(this.state.mainData)
+            );
+
             Download(d, "data.json", "text/json");
           }}
         >

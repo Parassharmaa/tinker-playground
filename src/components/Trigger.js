@@ -3,12 +3,12 @@ import React, { Component } from "react";
 class Trigger extends Component {
   state = {
     default: {
-      stnzaId: 0,
-      textId: 2,
+      stnzaId: "",
+      textId: "",
       timestamp: null,
-      sceneObjectId: 0,
-      animId: -1,
-      typeOfLinking: 3
+      sceneObjectId: "",
+      animId: "",
+      typeOfLinking: ""
     }
   };
   render() {

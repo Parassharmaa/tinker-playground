@@ -2,13 +2,14 @@
   "name": "tinkrbook-playground",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/parassharmaa/tinker-playground/",
+  "homepage": "https://parassharmaa.github.io/tinker-playground/",
   "dependencies": {
     "downloadjs": "^1.4.7",
+    "gh-pages": "^2.0.1",
+    "lodash": "^4.17.11",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
-    "gh-pages": "^2.0.1"
+    "react-scripts": "2.1.5"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -3,11 +3,11 @@ import React, { Component } from "react";
 class Sequences extends Component {
   state = {
     default: {
-      startFrame: 0,
-      endFrame: 5,
-      noOfLoops: 100,
+      startFrame: "",
+      endFrame: "",
+      noOfLoops: "",
       movable: {
-        speed: 0
+        speed: ""
       }
     }
   };
