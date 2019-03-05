@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/parassharmaa/tinker-playground/precache-manifest.25d2d6e3d1688f49dd73fda5978c20c9.js"
+  "/tinker-playground/precache-manifest.3b49f1e63badab0328a6c5581c20d946.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/parassharmaa/tinker-playground/index.html", {
+workbox.routing.registerNavigationRoute("/tinker-playground/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
