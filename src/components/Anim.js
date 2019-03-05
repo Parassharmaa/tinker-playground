@@ -4,15 +4,15 @@ import Sequence from "./Sequence";
 class Anim extends Component {
   state = {
     default: {
-      id: 0,
-      animName: "A02",
-      startX: 25,
-      startY: -65,
-      startIndex: 0,
-      endIndex: 5,
-      onTouch: true,
-      onStart: false,
-      secPerFrame: [0.2, 0.2, 0.2, 0.2, 0.2, 0.2],
+      id: "",
+      animName: "",
+      startX: "",
+      startY: "",
+      startIndex: "",
+      endIndex: "",
+      onTouch: "",
+      onStart: "",
+      secPerFrame: [],
       sequences: []
     }
   };

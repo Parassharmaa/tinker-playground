@@ -4,17 +4,17 @@ import Anim from "./Anim";
 class GameObjects extends Component {
   state = {
     default: {
-      id: 0,
-      posX: 25,
-      posY: -65,
-      scaleX: 40,
-      scaleY: 40,
-      imageName: "A02-1",
-      orderInLayer: 1,
-      inText: true,
-      label: "wag",
-      destroyOnCollision: "NIL",
-      draggable: false,
+      id: "",
+      posX: "",
+      posY: "",
+      scaleX: "",
+      scaleY: "",
+      imageName: "",
+      orderInLayer: "",
+      inText: "",
+      label: "",
+      destroyOnCollision: "",
+      draggable: "",
       anim: []
     }
   };
